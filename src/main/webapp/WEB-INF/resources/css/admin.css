@@ -1,0 +1,213 @@
+body {
+    overflow-x: hidden;
+}
+
+label {
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+/**************************** Style *****************************/
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: var(--space-cadet-color);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 80%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.admin-btn {
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid var(--space-cadet-color);
+    color: var(--baby-powder-color);
+    background-color: var(--space-cadet-color);
+    text-align: center;
+    padding: 3px 15px;
+    margin: 0px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 13pt;
+    min-width: 30px;
+}
+
+.admin-btn:hover {
+    background-color: var(--eucalyptus-color);
+    border-color: var(--eucalyptus-color);
+}
+
+.admin-btn-secondary {
+    border: 1px solid var(--space-cadet-color);
+    color: var(--space-cadet-color);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-family: "Open Sans";
+    font-size: 13pt;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+.admin-btn-secondary:hover {
+    background-color: var(--tea-rose-color);
+}
+
+.fixed {
+    position: fixed;
+    background: white;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    padding: 20px;
+}
+
+/**************************** Sidebar *****************************/
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: var(--baby-powder-color);
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        left: 200px;
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+
+/**************************** delete article *****************************/
+.modal {
+    width: 600px;
+    height: 250px;
+}
+
+.modal-content {
+    box-shadow: none;
+    border: transparent;
+}
+
+.modal-body {
+    font-family: "Open Sans";
+    font-size: 13pt;
+}
+
+.modal-header {
+    margin: auto auto auto 10px;
+}
+
+#delete-article-table {
+    top: 80px;
+    position: absolute;
+}
+
+/**************************** edit article *****************************/
+
+#editArticleModal {
+    width: 700px;
+    height: 700px;
+}
+
+/**************************** add survey *****************************/
+.input-answer {
+    width: 280px;
+}

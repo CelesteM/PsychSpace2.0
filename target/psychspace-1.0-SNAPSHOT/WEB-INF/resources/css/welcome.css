@@ -1,0 +1,107 @@
+/*---------------- BACKGROUND ----------------*/
+.welcome-background{
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/header.jpg');
+    background-color: var(--space-cadet-color);
+    background-attachment: fixed;
+    position: absolute;
+}
+
+/*---------------- CONTENT ----------------*/
+.welcome-header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.welcome-header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 50px 15px 15px auto;
+    width: 100%;
+}
+
+.welcome-header .header-content .header-content-inner h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-family: "Maven Pro";
+    vertical-align: middle;
+    align-content: center;
+}
+
+.welcome-header .header-content .header-content-inner hr {
+    margin: 20px auto;
+}
+
+.welcome-header .header-content .header-content-inner p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    font-family: "Open Sans";
+}
+
+    /*---------------- LOGOS AND TEXT ----------------*/
+.welcome-header .header-content-inner-logos{
+    padding-top: 6em;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    max-width: 40%;
+}
+
+.welcome-header .header-content-inner-logos p{
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 1.5em;
+}
+
+.welcome-header .welcome-img-logo{
+    padding: 2em;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.welcome-header .welcome-img-text{
+    padding: 2em;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+.welcome-header .logo-img{
+    display: inline-block;
+}
+
+.welcome-header .logo-text-img{
+    display: inline-block;
+}
+
+/*---------------- BUTTONS ----------------*/
+.welcome-header .header-content-inner-buttons{
+    padding: 1em;
+}
+
+.welcome-header .anchor-link{
+    color: var(--baby-powder-color);
+    border: none;
+    width: auto;
+}
+
+.welcome-header .anchor-link:hover{
+    color: var(--baby-powder-color);
+    text-decoration: none;
+}
+
+
+
+

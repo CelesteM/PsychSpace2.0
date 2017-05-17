@@ -1,0 +1,114 @@
+h3 {
+    font-size: 1.4vw;
+}
+
+.tab {
+    clear: both;
+}
+
+.wrapper {
+    margin: 65px 0px 0px 0px;
+    position: absolute;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+input[type="number"] {
+    height: 25px;
+    width: 130px;
+}
+
+.div-top {
+    margin-bottom: 20px;
+}
+
+.instructor-btn {
+    border: solid 1px var(--space-cadet-color);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--space-cadet-color);
+}
+
+.instructor-btn:hover {
+    border: solid 1px var(--eucalyptus-color);
+    color: var(--eucalyptus-color);
+}
+
+.instructor-btn-primary {
+    background-color: var(--tea-rose-color);
+    border-color: 1px solid var(--tea-rose-color);
+    color: var(--space-cadet-color);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.instructor-btn-primary:hover {
+    border-color: var(--dogwood-color);
+    background-color: var(--dogwood-color);
+    color: var(--baby-powder-color);
+}
+
+.instructor-btn-secondary {
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px var(--space-cadet-color);
+    color: var(--space-cadet-color);
+    box-shadow: none;
+}
+
+.instructor-btn-secondary:hover {
+    border: var(--eucalyptus-color);
+    color: var(--eucalyptus-color);
+}
+
+.instructor-modal {
+    width: 540px;
+}
+
+
+/*************************** side-bar ****************************/
+
+.list-group {
+    position: fixed;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus {
+    background-color: var(--eucalyptus-color);
+    color: var(--baby-powder-color);
+    border-color: var(--eucalyptus-color)
+}
+
+.list-group-item.active:hover {
+    background-color: var(--eucalyptus-color);
+    border-color: var(--eucalyptus-color);
+    color: var(--yellow-color);
+}
+
+/*************************** course ****************************/
+#addCourseModal {
+    height: 550px;
+}
+
+/*************************** survey ****************************/
+.label-questions {
+    display: block;
+    clear: both;
+    font-size: 15pt
+}
+
+
+/*************************** video ****************************/
+#addVideoModal,
+#editVideoModal{
+    height: 350px;
+}
+
+#deleteVideoModal {
+    height: 250px;
+}
+
+.instructor-video-footer {
+    margin: 10px;
+}
